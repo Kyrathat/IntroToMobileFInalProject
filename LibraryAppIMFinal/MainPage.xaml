@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LibraryAppIMFinal.MainPage">
+    <VerticalStackLayout>
+        <Entry x:Name="TitleEntry" Placeholder="Title"></Entry>
+        <Entry x:Name="AuthorEntry" Placeholder="Author"></Entry>
+        <Entry x:Name="GenreEntry" Placeholder="Genre"></Entry>
+        <Entry x:Name="ISBNEntry" Placeholder="ISBN"></Entry>
+        <Entry x:Name="SeriesEntry" Placeholder="Series"></Entry>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Text="Search" Clicked="OnSearchClick"></Button>
+            <Button Grid.Column="1" Text="Clear"></Button>
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

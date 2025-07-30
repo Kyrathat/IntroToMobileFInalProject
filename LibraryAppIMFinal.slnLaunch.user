@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "LibraryAppIMFinal\\LibraryAppIMFinal.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "LibraryAPI\\LibraryAPI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
