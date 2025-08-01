@@ -15,10 +15,15 @@ namespace LibraryAppIMFinal
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
-#if DEBUG
-    		builder.Logging.AddDebug();
-#endif
+            // Register services and pages
+            builder.Services.AddSingleton<APIService>();
+            builder.Services.AddTransient<MainPage>();
+            builder.Services.AddTransient<SearchResults>();
+            builder.Services.AddTransient<BookCreation>();
 
+#if DEBUG
+            builder.Logging.AddDebug();
+#endif
             return builder.Build();
         }
     }

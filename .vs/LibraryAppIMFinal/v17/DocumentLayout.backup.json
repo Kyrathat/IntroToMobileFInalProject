@@ -1,0 +1,187 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\mediacreation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\mediacreation.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\searchresults.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\searchresults.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\mediacreation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\mediacreation.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\searchresults.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\searchresults.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CAA00F50-83E2-4B3B-B4A3-E341919EB76A}|LibraryAPI\\LibraryAPI.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CAA00F50-83E2-4B3B-B4A3-E341919EB76A}|LibraryAPI\\LibraryAPI.csproj|solutionrelative:libraryapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|c:\\users\\lulul\\source\\repos\\introtomobilefinalproject\\libraryappimfinal\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}",
+      "RelativeMoniker": "D:0:0:{455C03A4-46A3-4352-B156-D17FF604285C}|LibraryAppIMFinal\\LibraryAppIMFinal.csproj|solutionrelative:libraryappimfinal\\platforms\\android\\androidmanifest.xml||{4E01A4BC-CFCF-452C-8C08-51352512D197}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MediaCreation.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MediaCreation.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\MediaCreation.xaml.cs",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MediaCreation.xaml.cs",
+              "RelativeToolTip": "LibraryAppIMFinal\\MediaCreation.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T21:30:09.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SearchResults.xaml",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\SearchResults.xaml",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\SearchResults.xaml",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\SearchResults.xaml",
+              "RelativeToolTip": "LibraryAppIMFinal\\SearchResults.xaml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAYwLMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T21:22:43.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MediaCreation.xaml",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MediaCreation.xaml",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\MediaCreation.xaml",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MediaCreation.xaml",
+              "RelativeToolTip": "LibraryAppIMFinal\\MediaCreation.xaml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAIwL4AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T21:17:55.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MainPage.xaml",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MainPage.xaml",
+              "RelativeToolTip": "LibraryAppIMFinal\\MainPage.xaml",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAQwLMAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-07-30T00:47:56.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SearchResults.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\SearchResults.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\SearchResults.xaml.cs",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\SearchResults.xaml.cs",
+              "RelativeToolTip": "LibraryAppIMFinal\\SearchResults.xaml.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAUwEoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:44:34.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MainPage.xaml.cs",
+              "RelativeToolTip": "LibraryAppIMFinal\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:42:36.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\MauiProgram.cs",
+              "RelativeToolTip": "LibraryAppIMFinal\\MauiProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:42:27.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "LibraryAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "LibraryAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAkwCgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-30T00:38:07.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AndroidManifest.xml",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\Platforms\\Android\\AndroidManifest.xml",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\Platforms\\Android\\AndroidManifest.xml",
+              "RelativeToolTip": "LibraryAppIMFinal\\Platforms\\Android\\AndroidManifest.xml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-07-30T00:30:30.316Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "APIService.cs",
+              "DocumentMoniker": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\APIService.cs",
+              "RelativeDocumentMoniker": "LibraryAppIMFinal\\APIService.cs",
+              "ToolTip": "C:\\Users\\lulul\\source\\repos\\IntroToMobileFInalProject\\LibraryAppIMFinal\\APIService.cs",
+              "RelativeToolTip": "LibraryAppIMFinal\\APIService.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAADwv2gAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T00:29:30.266Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

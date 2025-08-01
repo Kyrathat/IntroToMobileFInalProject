@@ -2,20 +2,179 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="LibraryAppIMFinal.SearchResults"
-             Title="SearchResults">
-    <CollectionView ItemsSource="{Binding SearchResultsList}">
-        <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Frame BorderColor="Gray" Margin="5">
-                    <VerticalStackLayout>
-                        <Label Text="{Binding Title}" FontAttributes="Bold" />
-                        <Label Text="{Binding Author}" />
-                        <Label Text="{Binding Genre}" />
-                        <Label Text="{Binding ISBN}" />
-                        <Label Text="{Binding Series}" />
-                    </VerticalStackLayout>
-                </Frame>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+             Title="Search Results"
+             BackgroundColor="#F8F9FA">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!-- Result Card Style -->
+            <Style x:Key="ResultCardStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="CornerRadius" Value="12" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="Padding" Value="20" />
+                <Setter Property="Margin" Value="10,8" />
+                <Setter Property="BorderColor" Value="Transparent" />
+            </Style>
+
+            <!-- Title Label Style -->
+            <Style x:Key="BookTitleStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="#212529" />
+                <Setter Property="LineBreakMode" Value="TailTruncation" />
+                <Setter Property="Margin" Value="0,0,0,8" />
+            </Style>
+
+            <!-- Detail Label Style -->
+            <Style x:Key="BookDetailStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="#495057" />
+                <Setter Property="LineBreakMode" Value="TailTruncation" />
+                <Setter Property="Margin" Value="5,0,0,0" />
+            </Style>
+
+            <!-- Info Label Style -->
+            <Style x:Key="InfoLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="12" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="TextColor" Value="#6C757D" />
+                <Setter Property="WidthRequest" Value="60" />
+            </Style>
+
+            <!-- Header Style -->
+            <Style x:Key="HeaderFrameStyle" TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="White" />
+                <Setter Property="CornerRadius" Value="0" />
+                <Setter Property="HasShadow" Value="True" />
+                <Setter Property="Padding" Value="20,15" />
+                <Setter Property="BorderColor" Value="Transparent" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header Section -->
+        <Frame Grid.Row="0" Style="{StaticResource HeaderFrameStyle}">
+            <StackLayout>
+                <Label Text="📖 Library Search Results" 
+                       FontSize="24" 
+                       FontAttributes="Bold" 
+                       TextColor="#212529" 
+                       HorizontalOptions="Center" />
+
+                <Label Text="Tap any book for more details" 
+                       FontSize="12" 
+                       TextColor="#6C757D" 
+                       HorizontalOptions="Center"
+                       Margin="0,5,0,0" />
+            </StackLayout>
+        </Frame>
+
+        <!-- Results List -->
+        <CollectionView Grid.Row="1" 
+                       ItemsSource="{Binding SearchResultsList}"
+                       Margin="0,10,0,0"
+                       BackgroundColor="Transparent">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="0,4">
+                        <Frame Style="{StaticResource ResultCardStyle}">
+                            <StackLayout Spacing="8">
+
+                                <!-- Book Title with Icon -->
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <Label Grid.Column="0" 
+                                           Text="📘" 
+                                           FontSize="20" 
+                                           VerticalOptions="Center"
+                                           Margin="0,0,10,0" />
+
+                                    <Label Grid.Column="1" 
+                                           Text="{Binding Title}" 
+                                           Style="{StaticResource BookTitleStyle}" />
+                                </Grid>
+
+                                <!-- Author -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Author:" Style="{StaticResource InfoLabelStyle}" />
+                                    <Label Text="{Binding Author}" Style="{StaticResource BookDetailStyle}" />
+                                </StackLayout>
+
+                                <!-- Genre -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Genre:" Style="{StaticResource InfoLabelStyle}" />
+                                    <Label Text="{Binding Genre}" Style="{StaticResource BookDetailStyle}" />
+                                </StackLayout>
+
+                                <!-- ISBN -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="ISBN:" Style="{StaticResource InfoLabelStyle}" />
+                                    <Label Text="{Binding ISBN}" Style="{StaticResource BookDetailStyle}" />
+                                </StackLayout>
+
+                                <!-- Series -->
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Series:" Style="{StaticResource InfoLabelStyle}" />
+                                    <Label Text="{Binding Series}" Style="{StaticResource BookDetailStyle}" />
+                                </StackLayout>
+
+                                <!-- Divider Line -->
+                                <BoxView HeightRequest="1" 
+                                        BackgroundColor="#E9ECEF" 
+                                        Margin="0,8,0,0" />
+
+                                <!-- Quick Actions -->
+                                <StackLayout Orientation="Horizontal" 
+                                           HorizontalOptions="End"
+                                           Margin="0,5,0,0">
+                                    <Label Text="📋 View Details" 
+                                           FontSize="12" 
+                                           TextColor="#007ACC" 
+                                           FontAttributes="Bold">
+                                        <Label.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnViewDetailsClicked" />
+                                        </Label.GestureRecognizers>
+                                    </Label>
+                                </StackLayout>
+
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+            <!-- Empty View -->
+            <CollectionView.EmptyView>
+                <StackLayout Padding="40" VerticalOptions="CenterAndExpand">
+                    <Label Text="📚" 
+                           FontSize="64" 
+                           HorizontalOptions="Center" 
+                           Opacity="0.3" />
+                    <Label Text="No Results Found" 
+                           FontSize="24" 
+                           FontAttributes="Bold" 
+                           TextColor="#495057" 
+                           HorizontalOptions="Center" 
+                           Margin="0,10,0,5" />
+                    <Label Text="Try adjusting your search criteria" 
+                           FontSize="14" 
+                           TextColor="#6C757D" 
+                           HorizontalOptions="Center" 
+                           HorizontalTextAlignment="Center" />
+                </StackLayout>
+            </CollectionView.EmptyView>
+        </CollectionView>
+
+    </Grid>
 </ContentPage>

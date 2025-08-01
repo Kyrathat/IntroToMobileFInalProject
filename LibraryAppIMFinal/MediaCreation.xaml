@@ -1,13 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="LibraryAppIMFinal.MainPage"
+             x:Class="LibraryAppIMFinal.BookCreation"
+             Title="Add New Book"
              BackgroundColor="#F8F9FA">
 
     <ContentPage.Resources>
         <ResourceDictionary>
             <!-- Entry Style -->
-            <Style x:Key="SearchEntryStyle" TargetType="Entry">
+            <Style x:Key="BookEntryStyle" TargetType="Entry">
                 <Setter Property="BackgroundColor" Value="White" />
                 <Setter Property="TextColor" Value="#212529" />
                 <Setter Property="FontSize" Value="16" />
@@ -19,7 +20,7 @@
 
             <!-- Primary Button Style -->
             <Style x:Key="PrimaryButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#007ACC" />
+                <Setter Property="BackgroundColor" Value="#28A745" />
                 <Setter Property="TextColor" Value="White" />
                 <Setter Property="FontSize" Value="16" />
                 <Setter Property="FontAttributes" Value="Bold" />
@@ -39,17 +40,6 @@
                 <Setter Property="Visual" Value="Material" />
             </Style>
 
-            <!-- Success Button Style -->
-            <Style x:Key="SuccessButtonStyle" TargetType="Button">
-                <Setter Property="BackgroundColor" Value="#28A745" />
-                <Setter Property="TextColor" Value="White" />
-                <Setter Property="FontSize" Value="16" />
-                <Setter Property="FontAttributes" Value="Bold" />
-                <Setter Property="HeightRequest" Value="50" />
-                <Setter Property="CornerRadius" Value="8" />
-                <Setter Property="Visual" Value="Material" />
-            </Style>
-
             <!-- Card Frame Style -->
             <Style x:Key="CardFrameStyle" TargetType="Frame">
                 <Setter Property="BackgroundColor" Value="White" />
@@ -57,6 +47,15 @@
                 <Setter Property="HasShadow" Value="True" />
                 <Setter Property="Padding" Value="20" />
                 <Setter Property="Margin" Value="10,20" />
+                <Setter Property="BorderColor" Value="Transparent" />
+            </Style>
+
+            <!-- Field Label Style -->
+            <Style x:Key="FieldLabelStyle" TargetType="Label">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="TextColor" Value="#495057" />
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="Margin" Value="0,0,0,5" />
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -66,66 +65,98 @@
 
             <!-- Header Section -->
             <StackLayout Margin="0,20,0,30" HorizontalOptions="Center">
-                <Label Text="📚" 
+                <Label Text="📝" 
                        FontSize="48" 
                        HorizontalOptions="Center" />
-                <Label Text="Library Search" 
+                <Label Text="Add New Book" 
                        FontSize="32" 
                        FontAttributes="Bold"
                        HorizontalOptions="Center" 
                        TextColor="#212529" />
-                <Label Text="Find your next great read" 
+                <Label Text="Enter book details to add to the library" 
                        FontSize="16" 
                        HorizontalOptions="Center" 
                        TextColor="#6C757D"
                        Margin="0,5,0,0" />
             </StackLayout>
 
-            <!-- Search Form Card -->
+            <!-- Book Creation Form Card -->
             <Frame Style="{StaticResource CardFrameStyle}">
                 <VerticalStackLayout Spacing="15">
 
-                    <Label Text="Search Criteria" 
+                    <Label Text="Book Information" 
                            FontSize="20" 
                            FontAttributes="Bold" 
                            TextColor="#343A40"
                            Margin="0,0,0,10" />
 
-                    <!-- Search Fields -->
+                    <!-- Title Field -->
                     <StackLayout>
-                        <Label Text="Title" FontSize="14" TextColor="#495057" FontAttributes="Bold" />
+                        <Label Text="Title *" Style="{StaticResource FieldLabelStyle}" />
                         <Entry x:Name="TitleEntry" 
                                Placeholder="Enter book title..." 
-                               Style="{StaticResource SearchEntryStyle}" />
+                               Style="{StaticResource BookEntryStyle}" />
                     </StackLayout>
 
+                    <!-- Author Field -->
                     <StackLayout>
-                        <Label Text="Author" FontSize="14" TextColor="#495057" FontAttributes="Bold" />
+                        <Label Text="Author *" Style="{StaticResource FieldLabelStyle}" />
                         <Entry x:Name="AuthorEntry" 
                                Placeholder="Enter author name..." 
-                               Style="{StaticResource SearchEntryStyle}" />
+                               Style="{StaticResource BookEntryStyle}" />
                     </StackLayout>
 
+                    <!-- Genre Field -->
                     <StackLayout>
-                        <Label Text="Genre" FontSize="14" TextColor="#495057" FontAttributes="Bold" />
+                        <Label Text="Genre" Style="{StaticResource FieldLabelStyle}" />
                         <Entry x:Name="GenreEntry" 
                                Placeholder="Enter genre..." 
-                               Style="{StaticResource SearchEntryStyle}" />
+                               Style="{StaticResource BookEntryStyle}" />
                     </StackLayout>
 
+                    <!-- ISBN Field -->
                     <StackLayout>
-                        <Label Text="ISBN" FontSize="14" TextColor="#495057" FontAttributes="Bold" />
+                        <Label Text="ISBN" Style="{StaticResource FieldLabelStyle}" />
                         <Entry x:Name="ISBNEntry" 
                                Placeholder="Enter ISBN..." 
-                               Style="{StaticResource SearchEntryStyle}" />
+                               Style="{StaticResource BookEntryStyle}" />
                     </StackLayout>
 
+                    <!-- Series Field -->
                     <StackLayout>
-                        <Label Text="Series" FontSize="14" TextColor="#495057" FontAttributes="Bold" />
+                        <Label Text="Series" Style="{StaticResource FieldLabelStyle}" />
                         <Entry x:Name="SeriesEntry" 
                                Placeholder="Enter series name..." 
-                               Style="{StaticResource SearchEntryStyle}" />
+                               Style="{StaticResource BookEntryStyle}" />
                     </StackLayout>
+
+                    <!-- Publication Year Field -->
+                    <StackLayout>
+                        <Label Text="Publication Year" Style="{StaticResource FieldLabelStyle}" />
+                        <Entry x:Name="PublicationYearEntry" 
+                               Placeholder="Enter publication year..." 
+                               Keyboard="Numeric"
+                               Style="{StaticResource BookEntryStyle}" />
+                    </StackLayout>
+
+                    <!-- Description Field -->
+                    <StackLayout>
+                        <Label Text="Description" Style="{StaticResource FieldLabelStyle}" />
+                        <Editor x:Name="DescriptionEditor" 
+                                Placeholder="Enter book description..."
+                                BackgroundColor="White"
+                                TextColor="#212529"
+                                FontSize="16"
+                                HeightRequest="100"
+                                Margin="0,8" />
+                    </StackLayout>
+
+                    <!-- Required Fields Note -->
+                    <Label Text="* Required fields" 
+                           FontSize="12" 
+                           TextColor="#DC3545" 
+                           FontAttributes="Italic"
+                           Margin="0,10,0,0" />
 
                     <!-- Action Buttons -->
                     <Grid Margin="0,20,0,0" ColumnSpacing="15">
@@ -135,8 +166,8 @@
                         </Grid.ColumnDefinitions>
 
                         <Button Grid.Column="0" 
-                                Text="🔍 Search" 
-                                Clicked="OnSearchClick" 
+                                Text="📚 Add Book" 
+                                Clicked="OnAddBookClick" 
                                 Style="{StaticResource PrimaryButtonStyle}" />
 
                         <Button Grid.Column="1" 
@@ -148,28 +179,8 @@
                 </VerticalStackLayout>
             </Frame>
 
-            <!-- Create New Media Section -->
-            <Frame Style="{StaticResource CardFrameStyle}">
-                <VerticalStackLayout Spacing="15">
-                    <Label Text="Add New Media" 
-                           FontSize="20" 
-                           FontAttributes="Bold" 
-                           TextColor="#343A40"
-                           Margin="0,0,0,10" />
-
-                    <Label Text="Add a new book or media item to the library collection" 
-                           FontSize="14" 
-                           TextColor="#6C757D"
-                           Margin="0,0,0,15" />
-
-                    <Button Text="➕ Create New Book" 
-                            Clicked="OnCreateBookClick"
-                            Style="{StaticResource SuccessButtonStyle}" />
-                </VerticalStackLayout>
-            </Frame>
-
             <!-- Footer Info -->
-            <Label Text="Fill in any combination of fields to search the library database" 
+            <Label Text="All fields are optional except Title and Author" 
                    FontSize="12" 
                    TextColor="#6C757D" 
                    HorizontalOptions="Center"
