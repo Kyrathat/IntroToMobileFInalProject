@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/LibraryAPI/obj
+/LibraryAppIMFinal/obj
+.vs/LibraryAppIMFinal/FileContentIndex/56f341a3-644f-4baa-b940-d3532868e1d5.vsidx
+.vs/LibraryAppIMFinal/FileContentIndex/af2ca302-636e-4515-83ba-a912439ee292.vsidx
